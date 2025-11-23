@@ -5,7 +5,8 @@ namespace OsuSharp.Interfaces;
 public interface IUser : IUserCompact
 {
     IReadOnlyList<IUserAccountHistory> AccountHistory { get; }
-    IReadOnlyList<IUserProfileBanner> TournamentBanner { get; }
+    IUserProfileBanner TournamentBanner { get; }
+    IReadOnlyList<IUserProfileBanner> TournamentBanners { get; }
     IReadOnlyList<IUserBadge> Badges { get; }
     long? BeatmapPlaycountsCount { get; }
     long? UnrankedBeatmapsetCount { get; }

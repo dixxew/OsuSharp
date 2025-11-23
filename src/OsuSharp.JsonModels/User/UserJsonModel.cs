@@ -46,7 +46,10 @@ public class UserJsonModel : JsonModel
     public List<UserAccountHistoryJsonModel> AccountHistory { get; set; } = new();
 
     [JsonProperty("active_tournament_banner")]
-    public List<UserProfileBannerJsonModel> TournamentBanner { get; set; } = new();
+    public UserProfileBannerJsonModel TournamentBanner { get; set; } = new();
+    
+    [JsonProperty("active_tournament_banners")]
+    public List<UserProfileBannerJsonModel> TournamentBanners { get; set; } = new();
 
     [JsonProperty("badges")] 
     public List<UserBadgeJsonModel> Badges { get; set; } = new();

@@ -6,7 +6,8 @@ namespace OsuSharp.Domain;
 public class User : UserCompact, IUser
 {
     public IReadOnlyList<IUserAccountHistory> AccountHistory { get; internal set; } = null!;
-    public IReadOnlyList<IUserProfileBanner> TournamentBanner { get; internal set; } = null!;
+    public IUserProfileBanner TournamentBanner { get; internal set; } = null!;
+    public IReadOnlyList<IUserProfileBanner> TournamentBanners { get; internal set; } = null!;
     public IReadOnlyList<IUserBadge> Badges { get; internal set; } = null!;
     public long? BeatmapPlaycountsCount { get; internal set; }
     public object Blocks { get; internal set; } = null!;
